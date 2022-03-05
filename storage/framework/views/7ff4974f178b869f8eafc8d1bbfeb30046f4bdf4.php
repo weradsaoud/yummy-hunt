@@ -1,0 +1,1 @@
+<span><?php echo e($time); ?></span><?php /**PATH /home/laravel/web/ae.yummy-hunt.com/public_html/resources/views/orders/partials/time.blade.php ENDPATH**/ ?>
