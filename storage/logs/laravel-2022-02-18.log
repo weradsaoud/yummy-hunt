@@ -1,0 +1,805 @@
+[2022-02-18 17:43:29] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 17:43:57] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 17:44:21] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 17:59:57] prodcution.ALERT: "[8,9]"  
+[2022-02-18 17:59:58] prodcution.ERROR: Argument 1 passed to Illuminate\Database\Query\Builder::cleanBindings() must be of the type array, string given, called in /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php on line 997 {"exception":"[object] (TypeError(code: 0): Argument 1 passed to Illuminate\\Database\\Query\\Builder::cleanBindings() must be of the type array, string given, called in /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php on line 997 at /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php:3369)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(997): Illuminate\\Database\\Query\\Builder->cleanBindings()
+#1 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php(23): Illuminate\\Database\\Query\\Builder->whereIn()
+#2 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(1658): Illuminate\\Database\\Eloquent\\Builder->forwardCallTo()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php(92): Illuminate\\Database\\Eloquent\\Builder->__call()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(48): App\\Http\\Controllers\\API\\Dealont\\DealontController->placeList()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(721): Illuminate\\Routing\\Route->run()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(723): Illuminate\\Pipeline\\Pipeline->then()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#42 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#44 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#45 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#46 {main}
+"} 
+[2022-02-18 18:05:27] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 18:05:45] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 18:18:04] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 18:18:14] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 18:34:36] prodcution.ALERT:   
+[2022-02-18 18:34:37] prodcution.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous (SQL: select count(*) as aggregate from `restorants` where exists (select * from `cuisines` inner join `restorant_has_cuisines` on `cuisines`.`id` = `restorant_has_cuisines`.`cuisine_id` where `restorants`.`id` = `restorant_has_cuisines`.`restorant_id` and `id` in (1, 2)) and `active` = 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous (SQL: select count(*) as aggregate from `restorants` where exists (select * from `cuisines` inner join `restorant_has_cuisines` on `cuisines`.`id` = `restorant_has_cuisines`.`cuisine_id` where `restorants`.`id` = `restorant_has_cuisines`.`restorant_id` and `id` in (1, 2)) and `active` = 1) at /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:712)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(376): Illuminate\\Database\\Connection->run()
+#2 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2414): Illuminate\\Database\\Connection->select()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2402): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2936): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2403): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2550): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2509): Illuminate\\Database\\Query\\Builder->runPaginationCountQuery()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(808): Illuminate\\Database\\Query\\Builder->getCountForPagination()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php(102): Illuminate\\Database\\Eloquent\\Builder->paginate()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(48): App\\Http\\Controllers\\API\\Dealont\\DealontController->placeList()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(721): Illuminate\\Routing\\Route->run()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(723): Illuminate\\Pipeline\\Pipeline->then()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#42 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#43 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#44 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#45 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#46 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#47 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#48 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#49 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#50 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#51 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#52 {main}
+
+[previous exception] [object] (Doctrine\\DBAL\\Driver\\PDO\\Exception(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous at /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDO/Exception.php:18)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(87): Doctrine\\DBAL\\Driver\\PDO\\Exception::new()
+#1 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(368): Doctrine\\DBAL\\Driver\\PDOConnection->prepare()
+#2 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(376): Illuminate\\Database\\Connection->run()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2414): Illuminate\\Database\\Connection->select()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2402): Illuminate\\Database\\Query\\Builder->runSelect()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2936): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2403): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2550): Illuminate\\Database\\Query\\Builder->get()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2509): Illuminate\\Database\\Query\\Builder->runPaginationCountQuery()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(808): Illuminate\\Database\\Query\\Builder->getCountForPagination()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php(102): Illuminate\\Database\\Eloquent\\Builder->paginate()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(48): App\\Http\\Controllers\\API\\Dealont\\DealontController->placeList()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(721): Illuminate\\Routing\\Route->run()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(723): Illuminate\\Pipeline\\Pipeline->then()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#42 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#43 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#45 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#47 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#49 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#51 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#53 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#54 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#55 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous at /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:82)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(82): PDO->prepare()
+#1 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(368): Doctrine\\DBAL\\Driver\\PDOConnection->prepare()
+#2 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(376): Illuminate\\Database\\Connection->run()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2414): Illuminate\\Database\\Connection->select()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2402): Illuminate\\Database\\Query\\Builder->runSelect()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2936): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2403): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2550): Illuminate\\Database\\Query\\Builder->get()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2509): Illuminate\\Database\\Query\\Builder->runPaginationCountQuery()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(808): Illuminate\\Database\\Query\\Builder->getCountForPagination()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php(102): Illuminate\\Database\\Eloquent\\Builder->paginate()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(48): App\\Http\\Controllers\\API\\Dealont\\DealontController->placeList()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(205): Illuminate\\Routing\\Route->runController()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(721): Illuminate\\Routing\\Route->run()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(723): Illuminate\\Pipeline\\Pipeline->then()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#42 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#43 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#44 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#45 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#46 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#47 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#48 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#49 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#50 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#51 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#52 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#53 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#54 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#55 {main}
+"} 
+[2022-02-18 18:38:24] prodcution.ALERT:   
+[2022-02-18 18:39:04] prodcution.ALERT:   
+[2022-02-18 18:39:55] prodcution.ERROR: syntax error, unexpected ';', expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ';', expecting ')' at /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php:98)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\\Foundation\\Application->make()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 {main}
+"} 
+[2022-02-18 18:47:40] prodcution.ERROR: syntax error, unexpected ';', expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ';', expecting ')' at /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php:98)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\\Foundation\\Application->make()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 {main}
+"} 
+[2022-02-18 18:47:41] prodcution.ERROR: syntax error, unexpected ';', expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ';', expecting ')' at /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php:98)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\\Foundation\\Application->make()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 {main}
+"} 
+[2022-02-18 18:48:00] prodcution.ERROR: syntax error, unexpected ';', expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ';', expecting ')' at /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php:98)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\\Foundation\\Application->make()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 {main}
+"} 
+[2022-02-18 18:48:01] prodcution.ERROR: syntax error, unexpected ';', expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ';', expecting ')' at /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php:98)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\\Foundation\\Application->make()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 {main}
+"} 
+[2022-02-18 18:48:02] prodcution.ERROR: syntax error, unexpected ';', expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ';', expecting ')' at /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php:98)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\\Foundation\\Application->make()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 {main}
+"} 
+[2022-02-18 18:48:03] prodcution.ERROR: syntax error, unexpected ';', expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ';', expecting ')' at /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php:98)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\\Foundation\\Application->make()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 {main}
+"} 
+[2022-02-18 18:48:32] prodcution.ERROR: syntax error, unexpected ';', expecting ')' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ';', expecting ')' at /home/laravel/web/syr.yummy-hunt.com/public_html/app/Http/Controllers/API/Dealont/DealontController.php:98)
+[stacktrace]
+#0 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(428): Composer\\Autoload\\includeFile()
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#2 [internal function]: spl_autoload_call()
+#3 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct()
+#4 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\\Container\\Container->build()
+#5 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\\Container\\Container->resolve()
+#6 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\\Foundation\\Application->resolve()
+#7 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\\Container\\Container->make()
+#8 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(276): Illuminate\\Foundation\\Application->make()
+#9 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->getController()
+#10 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1012): Illuminate\\Routing\\Route->controllerMiddleware()
+#11 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(734): Illuminate\\Routing\\Route->gatherMiddleware()
+#12 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(714): Illuminate\\Routing\\Router->gatherRouteMiddleware()
+#13 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack()
+#14 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(662): Illuminate\\Routing\\Router->runRoute()
+#15 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute()
+#16 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(167): Illuminate\\Routing\\Router->dispatch()
+#17 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#18 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#19 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle()
+#20 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/sentry/sentry-laravel/src/Sentry/Laravel/Http/SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#21 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle()
+#22 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#24 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#26 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#27 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#30 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#32 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#33 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#34 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fruitcake/laravel-cors/src/HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#35 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle()
+#36 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#37 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#38 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#39 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then()
+#40 /home/laravel/web/syr.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#41 /home/laravel/web/syr.yummy-hunt.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#42 {main}
+"} 
+[2022-02-18 18:49:02] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 18:49:06] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 18:49:06] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 18:49:11] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 18:49:11] prodcution.ALERT: array (
+  0 => '2',
+)  
+[2022-02-18 18:49:18] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 18:49:18] prodcution.ALERT: array (
+  0 => '3',
+)  
+[2022-02-18 18:49:21] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:32:43] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:32:49] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:32:49] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 19:34:01] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:34:04] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:34:04] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 19:34:46] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:34:50] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:34:50] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 19:35:02] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:35:26] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:44:15] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:46:36] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:48:54] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 19:53:08] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:04:30] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:04:30] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 20:04:33] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:04:33] prodcution.ALERT: array (
+  0 => '1',
+  1 => '2',
+)  
+[2022-02-18 20:04:37] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:04:37] prodcution.ALERT: array (
+  0 => '3',
+)  
+[2022-02-18 20:04:40] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:04:48] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:04:48] prodcution.ALERT: array (
+  0 => '2',
+  1 => '3',
+)  
+[2022-02-18 20:05:21] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:05:30] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:05:36] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:05:42] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:05:42] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 20:05:45] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:05:45] prodcution.ALERT: array (
+  0 => '2',
+)  
+[2022-02-18 20:05:52] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:05:57] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 20:06:01] prodcution.ALERT: array (
+  0 => '1',
+  1 => '3',
+)  
+[2022-02-18 20:06:03] prodcution.ALERT: array (
+  0 => '1',
+  1 => '3',
+  2 => '2',
+)  
+[2022-02-18 20:06:06] prodcution.ALERT: array (
+  0 => '3',
+  1 => '2',
+)  
+[2022-02-18 20:06:09] prodcution.ALERT: array (
+  0 => '3',
+)  
+[2022-02-18 20:06:14] prodcution.ALERT: array (
+  0 => '1',
+  1 => '2',
+)  
+[2022-02-18 20:11:32] prodcution.ALERT: array (
+  0 => '1',
+  1 => '2',
+)  
+[2022-02-18 20:12:06] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:12:12] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:12:12] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 20:12:17] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 20:13:55] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 20:14:00] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 20:14:23] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 21:23:39] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 21:24:10] prodcution.ALERT: array (
+  0 => '1',
+)  
+[2022-02-18 21:30:08] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 21:30:36] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 21:30:51] prodcution.ALERT: array (
+  0 => '7',
+)  
+[2022-02-18 21:31:07] prodcution.ALERT: array (
+  0 => '7',
+)  

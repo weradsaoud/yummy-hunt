@@ -1,0 +1,102 @@
+[2022-02-05 00:17:46] prodcution.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Database\Eloquent\Model::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1807
+Stack trace:
+#0 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(23): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(444): include('...')
+#2 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#3 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php(42): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(627): Illuminate\Database\DatabaseServiceProvider->register()
+#5 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(75): Illuminate\Foundation\Application->register()
+#6 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(604): Illuminate\Foundation\ProviderRepository->load()
+#7 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#8 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap()
+#9 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#10 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#11 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#12 /home/laravel/web/ae.yummy-hunt.com/public_html/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Database\\Eloquent\\Model::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1807
+Stack trace:
+#0 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(23): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(444): include('...')
+#2 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile()
+#3 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php(42): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(627): Illuminate\\Database\\DatabaseServiceProvider->register()
+#5 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(75): Illuminate\\Foundation\\Application->register()
+#6 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(604): Illuminate\\Foundation\\ProviderRepository->load()
+#7 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#8 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#9 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#10 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#11 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#12 /home/laravel/web/ae.yummy-hunt.com/public_html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#13 {main} at /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:23)
+[stacktrace]
+#0 {main}
+"} 
+[2022-02-05 00:48:18] prodcution.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Database\Eloquent\Model::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1807
+Stack trace:
+#0 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(23): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(444): include('...')
+#2 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#3 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php(42): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(627): Illuminate\Database\DatabaseServiceProvider->register()
+#5 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(75): Illuminate\Foundation\Application->register()
+#6 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(604): Illuminate\Foundation\ProviderRepository->load()
+#7 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#8 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap()
+#9 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#10 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#11 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#12 /home/laravel/web/ae.yummy-hunt.com/public_html/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Database\\Eloquent\\Model::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1807
+Stack trace:
+#0 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(23): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(444): include('...')
+#2 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile()
+#3 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php(42): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(627): Illuminate\\Database\\DatabaseServiceProvider->register()
+#5 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(75): Illuminate\\Foundation\\Application->register()
+#6 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(604): Illuminate\\Foundation\\ProviderRepository->load()
+#7 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#8 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#9 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#10 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#11 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#12 /home/laravel/web/ae.yummy-hunt.com/public_html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#13 {main} at /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:23)
+[stacktrace]
+#0 {main}
+"} 
+[2022-02-05 02:26:16] prodcution.ERROR: During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Database\Eloquent\Model::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1807
+Stack trace:
+#0 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(23): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(444): include('...')
+#2 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile()
+#3 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php(42): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(627): Illuminate\Database\DatabaseServiceProvider->register()
+#5 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(75): Illuminate\Foundation\Application->register()
+#6 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(604): Illuminate\Foundation\ProviderRepository->load()
+#7 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\Foundation\Application->registerConfiguredProviders()
+#8 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\Foundation\Bootstrap\RegisterProviders->bootstrap()
+#9 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#10 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#11 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#12 /home/laravel/web/ae.yummy-hunt.com/public_html/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#13 {main} {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\\Database\\Eloquent\\Model::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:1807
+Stack trace:
+#0 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(23): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(444): include('...')
+#2 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile()
+#3 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/DatabaseServiceProvider.php(42): Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(627): Illuminate\\Database\\DatabaseServiceProvider->register()
+#5 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(75): Illuminate\\Foundation\\Application->register()
+#6 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(604): Illuminate\\Foundation\\ProviderRepository->load()
+#7 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#8 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(230): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#9 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#10 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#11 /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#12 /home/laravel/web/ae.yummy-hunt.com/public_html/public/index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle()
+#13 {main} at /home/laravel/web/ae.yummy-hunt.com/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php:23)
+[stacktrace]
+#0 {main}
+"} 
