@@ -137,8 +137,8 @@ class BaseOrderRepository extends Controller
             $this->order->delivery_method=$expeditionsTypes[$this->expedition];  
 
             //Client
-            if(auth()->user()){
-                $this->order->client_id=auth()->user()->id;
+            if(auth("api")->user()){
+                $this->order->client_id=auth("api")->user()->id;
             }
 
             //TODO Set initials like VAT, prices etc to 0
@@ -177,12 +177,12 @@ class BaseOrderRepository extends Controller
 
             //Find the variant
             $variantName = '';
-            if ($item['variant']) {
-                //Find the variant
-                $variant = Variants::findOrFail($item['variant']);
-                $itemSelectedPrice = $variant->price;
-                $variantName = $variant->optionsList;
-            }
+            // if ($item['variant']) {
+            //     //Find the variant
+            //     $variant = Variants::findOrFail($item['variant']);
+            //     $itemSelectedPrice = $variant->price;
+            //     $variantName = $variant->optionsList;
+            // }
 
            //Find the extras
             foreach ($item['extrasSelected'] as $key => $extra) {
@@ -239,7 +239,7 @@ class BaseOrderRepository extends Controller
 
     public function notifyOwner(){
         //Inform owner - via email, sms or db
-        $this->vendor->user->notify((new OrderNotification($this->order))->locale(strtolower(config('settings.app_locale'))));
+        //$this->vendor->user->notify((new OrderNotification($this->order))->locale(strtolower(config('settings.app_locale'))));
 
         //Notify owner with pusher
         if (strlen(config('broadcasting.connections.pusher.secret')) > 4) {

@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use App\Restorant;
 use App\Items;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+use App\Repositories\Orders\MobileAppOrderRepository;
 
 class MenuController extends Controller
 {
@@ -114,19 +116,41 @@ class MenuController extends Controller
     public function post_order(Request $request)
     {
         $fields = $request->validate([
-            "client_id" => "integer",
+            //"client_id" => "integer",
             "restaurant_id" => "required|integer",
-            "order_price" => "required|integer",
-            "lat" => "string",
-            "lng" => "string",
-            "client_phone" => "string",
-            "client_whatsup_address" => "string",
+            //"order_price" => "required|numeric|between:0.0000,1000000.9999",
+            "delivery_method" => [
+                'required',
+                'string',
+                Rule::In(['delivery', 'pickup', 'dinein']),
+            ],
+            "isStripe" => "required|boolean",
+            "hasPayment" => "required|boolean",
+            "payment_method" => "string", //mollie for example
+            "comment" => "string",
+            //"vatvalue" => "required|numeric|between:0.0000,1000000.9999",
+            //"payment_processing_fee" => "required|numeric|between:0.0000,1000000.9999",
+            // "order_type" => [
+            //     'required',
+            //     'string',
+            //     Rule::In(['O', 'T']),
+            // ],
+
+            //"lat" => "string",
+            //"lng" => "string",
+            //"client_phone" => "string",
+            //"client_whatsup_address" => "string",
             "items" => "required|array|min:1",
-            "items.*.item_id" => "required|integer",
+            "items.*.id" => "required|integer",
             "items.*.qty" => "required|integer",
-            "items.*.variant_price" => "required|integer",
-            "items.*.extras" => "array",
-            "items.*.extras.*" => "string"
+            //"items.*.variant_price" => "required|numeric|between:0.0000,1000000.9999",
+            "items.*.extrasSelected" => "array",
+            "items.*.extrasSelected.*.id" => "required|integer",
+            "items.*.variant" => "integer",
         ]);
+
+        $mobile_order = new MobileAppOrderRepository($fields["restaurant_id"], $request, $fields["delivery_method"], $fields["hasPayment"], $fields["isStripe"]);
+        $mobile_order->makeOrder();
+        //return response($fields, 200);
     }
 }

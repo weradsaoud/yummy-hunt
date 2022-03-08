@@ -27,7 +27,7 @@ return [
     |
     */
     'ignore_subdomains' => explode(',', env('IGNORE_SUBDOMAINS', 'www')),
-    'order_approve_directly' => env('APP_ORDER_APPROVE_DIRECTLY', false),
+    'order_approve_directly' => env('APP_ORDER_APPROVE_DIRECTLY', true),
     'allow_self_deliver' => env('APP_ALLOW_SELF_DELIVER', false),
 
     'twilio' => [

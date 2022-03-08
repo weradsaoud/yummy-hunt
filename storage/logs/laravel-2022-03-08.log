@@ -1,0 +1,579 @@
+[2022-03-08 06:55:17] prodcution.ERROR: Method App\Repositories\Orders\MobileAppOrderRepository::payOrder does not exist. {"exception":"[object] (BadMethodCallException(code: 0): Method App\\Repositories\\Orders\\MobileAppOrderRepository::payOrder does not exist. at C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php:68)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\app\\Repositories\\Orders\\MobileAppOrderRepository.php(48): Illuminate\\Routing\\Controller->__call('payOrder', Array)
+#1 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\app\\Http\\Controllers\\API\\Dealont\\MenuController.php(153): App\\Repositories\\Orders\\MobileAppOrderRepository->makeOrder()
+#2 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\API\\Dealont\\MenuController->post_order(Object(Illuminate\\Http\\Request))
+#3 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('post_order', Array)
+#4 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\Dealont\\MenuController), 'post_order')
+#5 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#6 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Route->run()
+#7 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#12 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#13 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#14 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(723): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#16 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#17 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#18 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#19 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#21 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\sentry\\sentry-laravel\\src\\Sentry\\Laravel\\Http\\SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\sentry\\sentry-laravel\\src\\Sentry\\Laravel\\Http\\SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')
+#46 {main}
+"} 
+[2022-03-08 07:22:51] prodcution.ERROR: Connection could not be established with host smtp.yummy-hunt.com :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: No such host is known.  {"exception":"[object] (Swift_TransportException(code: 0): Connection could not be established with host smtp.yummy-hunt.com :stream_socket_client(): php_network_getaddresses: getaddrinfo failed: No such host is known.  at C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php:261)
+[stacktrace]
+#0 [internal function]: Swift_Transport_StreamBuffer->{closure}(2, 'stream_socket_c...', 'C:\\\\xampp\\\\htdocs...', 264, Array)
+#1 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php(264): stream_socket_client('ssl://smtp.yumm...', 0, 'php_network_get...', 30, 4, Resource id #1314)
+#2 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\StreamBuffer.php(58): Swift_Transport_StreamBuffer->establishSocketConnection()
+#3 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Transport\\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#4 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\swiftmailer\\swiftmailer\\lib\\classes\\Swift\\Mailer.php(65): Swift_Transport_AbstractSmtpTransport->start()
+#5 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(521): Swift_Mailer->send(Object(Swift_Message), Array)
+#6 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Mail\\Mailer.php(288): Illuminate\\Mail\\Mailer->sendSwiftMessage(Object(Swift_Message))
+#7 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\Channels\\MailChannel.php(65): Illuminate\\Mail\\Mailer->send(Object(Illuminate\\Support\\HtmlString), Array, Object(Closure))
+#8 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(148): Illuminate\\Notifications\\Channels\\MailChannel->send(Object(App\\User), Object(App\\Notifications\\OrderNotification))
+#9 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(106): Illuminate\\Notifications\\NotificationSender->sendToNotifiable(Object(App\\User), '91966e5e-a4d8-4...', Object(App\\Notifications\\OrderNotification), 'mail')
+#10 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Traits\\Localizable.php(29): Illuminate\\Notifications\\NotificationSender->Illuminate\\Notifications\\{closure}()
+#11 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(109): Illuminate\\Notifications\\NotificationSender->withLocale('en', Object(Closure))
+#12 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\NotificationSender.php(79): Illuminate\\Notifications\\NotificationSender->sendNow(Object(Illuminate\\Database\\Eloquent\\Collection), Object(App\\Notifications\\OrderNotification))
+#13 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\ChannelManager.php(39): Illuminate\\Notifications\\NotificationSender->send(Object(Illuminate\\Database\\Eloquent\\Collection), Object(App\\Notifications\\OrderNotification))
+#14 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Notifications\\RoutesNotifications.php(18): Illuminate\\Notifications\\ChannelManager->send(Object(App\\User), Object(App\\Notifications\\OrderNotification))
+#15 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\app\\Repositories\\Orders\\BaseOrderRepository.php(242): App\\User->notify(Object(App\\Notifications\\OrderNotification))
+#16 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\app\\Repositories\\Orders\\MobileAppOrderRepository.php(100): App\\Repositories\\Orders\\BaseOrderRepository->notifyOwner()
+#17 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\app\\Repositories\\Orders\\MobileAppOrderRepository.php(62): App\\Repositories\\Orders\\MobileAppOrderRepository->notify()
+#18 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\app\\Http\\Controllers\\API\\Dealont\\MenuController.php(153): App\\Repositories\\Orders\\MobileAppOrderRepository->makeOrder()
+#19 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\API\\Dealont\\MenuController->post_order(Object(Illuminate\\Http\\Request))
+#20 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('post_order', Array)
+#21 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(262): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\API\\Dealont\\MenuController), 'post_order')
+#22 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(205): Illuminate\\Routing\\Route->runController()
+#23 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Route->run()
+#24 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(50): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(103): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest(Object(Illuminate\\Http\\Request), Object(Closure), Array)
+#29 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(55): Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate\\Http\\Request), Object(Closure), 'api', Object(Closure))
+#30 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 'api')
+#31 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(723): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#33 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#34 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(662): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#35 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(651): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#36 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(167): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#37 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\sentry\\sentry-laravel\\src\\Sentry\\Laravel\\Http\\SetRequestIpMiddleware.php(45): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestIpMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\sentry\\sentry-laravel\\src\\Sentry\\Laravel\\Http\\SetRequestMiddleware.php(42): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Sentry\\Laravel\\Http\\SetRequestMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(60): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#52 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#53 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#54 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php(52): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#55 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fruitcake\\Cors\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#58 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#59 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(142): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#60 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#61 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\public\\index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#62 C:\\xampp\\htdocs\\syr.yummy-hunt.com\\server.php(21): require_once('C:\\\\xampp\\\\htdocs...')
+#63 {main}
+"} 
+[2022-03-08 07:33:15] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 828,
+        "created_at": "2022-03-08T03:33:14.000000Z",
+        "updated_at": "2022-03-08T03:33:14.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 18,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " helllo werad",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 7.5600000000000005,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-08 07:33:58] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 829,
+        "created_at": "2022-03-08T03:33:58.000000Z",
+        "updated_at": "2022-03-08T03:33:58.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 18,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " helllo werad",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 7.5600000000000005,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-08 07:36:22] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 830,
+        "created_at": "2022-03-08T03:34:14.000000Z",
+        "updated_at": "2022-03-08T03:34:14.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 18,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " helllo werad",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 7.5600000000000005,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
