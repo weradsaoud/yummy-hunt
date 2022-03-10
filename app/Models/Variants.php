@@ -11,7 +11,7 @@ class Variants extends Model
 {
     use SoftDeletes;
     protected $table = 'variants';
-    protected $fillable = ['price', 'item_id', 'options'];
+    protected $fillable = ['id', 'price', 'item_id', 'options'];
 
     public function item()
     {
@@ -26,5 +26,16 @@ class Variants extends Model
     public function extras()
     {
         return $this->belongsToMany(\App\Extras::class, 'variants_has_extras', 'variant_id', 'extra_id');
+    }
+
+    public static function getVariantIdFromOptions($optionsList, $itemId)
+    {
+        $variants = Variants::where('item_id', $itemId)->get();
+        $variant = $variants->filter(function ($variant) use ($optionsList) {
+            $com = $variant->getOptionsListAttribute();
+            return $com == $optionsList;
+        })->values();
+
+        return $variant[0];   
     }
 }

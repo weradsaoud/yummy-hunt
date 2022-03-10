@@ -1,0 +1,1540 @@
+[2022-03-10 02:36:05] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 833,
+        "created_at": "2022-03-09T22:36:03.000000Z",
+        "updated_at": "2022-03-09T22:36:04.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 2,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 17.98,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 7.5600000000000005,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 2,
+            "created_at": "2021-02-16T16:00:07.000000Z",
+            "updated_at": "2021-02-16T16:00:07.000000Z",
+            "name": "Oasis Burgers",
+            "subdomain": "oasisburgers",
+            "logo": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c",
+            "cover": "",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.588894",
+            "lng": "55.939175",
+            "address": "6 Yukon Drive Raeford, NC 28376",
+            "phone": "+971503780636",
+            "minimum": "10",
+            "description": "burgers, drinks, best chicken",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 0,
+            "can_pickup": 1,
+            "can_deliver": 1,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "oasisburgers",
+            "logom": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c_large.jpg",
+            "icon": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c_thumbnail.jpg",
+            "coverm": "\/default\/cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 02:49:58] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 834,
+        "created_at": "2022-03-09T22:49:58.000000Z",
+        "updated_at": "2022-03-09T22:49:58.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 2,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 17.98,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 7.5600000000000005,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 2,
+            "created_at": "2021-02-16T16:00:07.000000Z",
+            "updated_at": "2021-02-16T16:00:07.000000Z",
+            "name": "Oasis Burgers",
+            "subdomain": "oasisburgers",
+            "logo": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c",
+            "cover": "",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.588894",
+            "lng": "55.939175",
+            "address": "6 Yukon Drive Raeford, NC 28376",
+            "phone": "+971503780636",
+            "minimum": "10",
+            "description": "burgers, drinks, best chicken",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 0,
+            "can_pickup": 1,
+            "can_deliver": 1,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "oasisburgers",
+            "logom": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c_large.jpg",
+            "icon": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c_thumbnail.jpg",
+            "coverm": "\/default\/cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 12:48:07] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 835,
+        "created_at": "2022-03-10T08:48:05.000000Z",
+        "updated_at": "2022-03-10T08:48:06.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 2,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 17.98,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 7.5600000000000005,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 2,
+            "created_at": "2021-02-16T16:00:07.000000Z",
+            "updated_at": "2021-02-16T16:00:07.000000Z",
+            "name": "Oasis Burgers",
+            "subdomain": "oasisburgers",
+            "logo": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c",
+            "cover": "",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.588894",
+            "lng": "55.939175",
+            "address": "6 Yukon Drive Raeford, NC 28376",
+            "phone": "+971503780636",
+            "minimum": "10",
+            "description": "burgers, drinks, best chicken",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 0,
+            "can_pickup": 1,
+            "can_deliver": 1,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "oasisburgers",
+            "logom": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c_large.jpg",
+            "icon": "https:\/\/foodtiger.mobidonia.com\/uploads\/restorants\/c8d27bcc-54da-4c18-b8e6-f1414c71612c_thumbnail.jpg",
+            "coverm": "\/default\/cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 15:53:31] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 836,
+        "created_at": "2022-03-10T11:53:30.000000Z",
+        "updated_at": "2022-03-10T11:53:30.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 117.45,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 123.3,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 16:01:15] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 837,
+        "created_at": "2022-03-10T12:01:15.000000Z",
+        "updated_at": "2022-03-10T12:01:15.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 103.95,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 55.62,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 17:19:35] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 848,
+        "created_at": "2022-03-10T13:18:48.000000Z",
+        "updated_at": "2022-03-10T13:19:35.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 103.95,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 55.62,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 17:20:33] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 849,
+        "created_at": "2022-03-10T13:19:42.000000Z",
+        "updated_at": "2022-03-10T13:20:33.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 103.95,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 55.62,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 17:21:31] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 850,
+        "created_at": "2022-03-10T13:21:31.000000Z",
+        "updated_at": "2022-03-10T13:21:31.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 103.95,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 55.62,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 17:39:20] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 858,
+        "created_at": "2022-03-10T13:39:20.000000Z",
+        "updated_at": "2022-03-10T13:39:20.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 103.95,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 55.62,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  
+[2022-03-10 17:43:09] prodcution.INFO: Broadcasting [neworder-event] on channels [user.2] with payload:
+{
+    "order": {
+        "id": 859,
+        "created_at": "2022-03-10T13:43:09.000000Z",
+        "updated_at": "2022-03-10T13:43:09.000000Z",
+        "address_id": null,
+        "client_id": null,
+        "restorant_id": 1,
+        "driver_id": null,
+        "delivery_price": 0,
+        "order_price": 103.95,
+        "payment_method": null,
+        "payment_status": "unpaid",
+        "comment": " order to restaurant 2 3\/9\/2022 2:53",
+        "lat": null,
+        "lng": null,
+        "srtipe_payment_id": null,
+        "fee": 0,
+        "fee_value": "0.0000",
+        "static_fee": 0,
+        "delivery_method": 2,
+        "delivery_pickup_interval": "",
+        "vatvalue": 55.62,
+        "payment_processor_fee": 0,
+        "time_to_prepare": null,
+        "table_id": null,
+        "phone": null,
+        "whatsapp_address": null,
+        "order_type": "O",
+        "payment_link": "",
+        "restorant": {
+            "id": 1,
+            "created_at": "2021-02-16T16:00:05.000000Z",
+            "updated_at": "2021-12-21T08:10:54.000000Z",
+            "name": "Restaurant 1 - \u0627\u0644\u0645\u0637\u0639\u0645 1",
+            "subdomain": "restaurant11",
+            "logo": "3aa31f72-7a71-4b6c-8fee-b438c9df409f",
+            "cover": "dcb06410-d6b2-422f-86bd-6221ee041064",
+            "active": 1,
+            "user_id": 2,
+            "restaurant_category_id": null,
+            "lat": "25.276979553439105",
+            "lng": "55.33272936705489",
+            "address": "Dubai",
+            "phone": "+971503780636",
+            "minimum": "1",
+            "description": "italian, pasta, pizza \u0627\u064a\u0637\u0627\u0644\u064a, \u0628\u0627\u0633\u062a\u0627, \u0628\u064a\u062a\u0632\u0627",
+            "fee": 0,
+            "static_fee": 0,
+            "radius": [
+                {
+                    "lat": 40.61811135844185,
+                    "lng": -74.04154967363282
+                },
+                {
+                    "lat": 40.593088644275994,
+                    "lng": -74.00447081621094
+                },
+                {
+                    "lat": 40.57483700944677,
+                    "lng": -74.01271056230469
+                },
+                {
+                    "lat": 40.57222922648421,
+                    "lng": -73.94816588457032
+                },
+                {
+                    "lat": 40.58318123192112,
+                    "lng": -73.87812804277344
+                },
+                {
+                    "lat": 40.620196161732025,
+                    "lng": -73.89117430742188
+                },
+                {
+                    "lat": 40.64520872605633,
+                    "lng": -73.85340880449219
+                },
+                {
+                    "lat": 40.71862893820799,
+                    "lng": -73.96327208574219
+                },
+                {
+                    "lat": 40.680627151592745,
+                    "lng": -74.01957701738282
+                },
+                {
+                    "lat": 40.66552453494284,
+                    "lng": -74.00447081621094
+                }
+            ],
+            "is_featured": 0,
+            "city_id": 2,
+            "views": 1328,
+            "can_pickup": 0,
+            "can_deliver": 0,
+            "self_deliver": 0,
+            "free_deliver": 0,
+            "whatsapp_phone": "+971566704673",
+            "fb_username": null,
+            "do_covertion": 1,
+            "currency": "AED",
+            "payment_info": "We accept Cash On Deliver and direct payments. DEMO PAYMENT",
+            "mollie_payment_key": "test_W7vgVS4bUTVarzBm39wjUk7SRV3Aek",
+            "alias": "restaurant11",
+            "logom": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_large.jpg",
+            "icon": "\/uploads\/restorants\/3aa31f72-7a71-4b6c-8fee-b438c9df409f_thumbnail.jpg",
+            "coverm": "\/uploads\/restorants\/dcb06410-d6b2-422f-86bd-6221ee041064_cover.jpg",
+            "user": {
+                "id": 2,
+                "google_id": null,
+                "fb_id": null,
+                "name": "Demo Owner",
+                "email": "owner@example.com",
+                "email_verified_at": "2021-02-16T16:00:05.000000Z",
+                "phone": "",
+                "created_at": "2021-02-16T16:00:05.000000Z",
+                "updated_at": "2021-02-16T16:00:05.000000Z",
+                "active": 1,
+                "stripe_id": null,
+                "card_brand": null,
+                "card_last_four": null,
+                "trial_ends_at": null,
+                "verification_code": null,
+                "phone_verified_at": null,
+                "plan_id": 2,
+                "plan_status": "",
+                "cancel_url": "",
+                "update_url": "",
+                "checkout_id": "",
+                "subscription_plan_id": "",
+                "stripe_account": "",
+                "birth_date": "",
+                "lat": null,
+                "lng": null,
+                "working": 1,
+                "onorder": null,
+                "numorders": 0,
+                "rejectedorders": 0,
+                "paypal_subscribtion_id": null,
+                "mollie_customer_id": null,
+                "mollie_mandate_id": null,
+                "tax_percentage": "0.0000",
+                "extra_billing_information": null,
+                "mollie_subscribtion_id": null,
+                "paystack_subscribtion_id": null,
+                "paystack_trans_id": null
+            }
+        }
+    },
+    "msg": "You have new order with ID",
+    "socket": null
+}  

@@ -62,10 +62,21 @@ class MobileAppOrderRepository extends BaseOrderRepository implements OrderTypeI
         $this->notify();
 
         //At the end, return that all went ok
-        return Validator::make([], []);
+        //return Validator::make([], []);
+        return [
+            "url" => $this->getWhatsappUrl(),
+            "order_price"=>$this->order->order_price,
+            "restaurant_phone" => $this->order->restorant->phone,
+            "restaurant_whatsapp_phone" => $this->order->restorant->whatsapp_phone
+        ];
     }
 
-
+    public function getWhatsappUrl()
+    {
+        $message = $this->order->getSocialMessageAttribute();
+        $url = 'https://api.whatsapp.com/send?phone=' . $this->order->restorant->whatsapp_phone . '&text=' . $message;
+        return $url;
+    }
 
     public function setInitialStatus()
     {

@@ -146,11 +146,12 @@ class MenuController extends Controller
             //"items.*.variant_price" => "required|numeric|between:0.0000,1000000.9999",
             "items.*.extrasSelected" => "array",
             "items.*.extrasSelected.*.id" => "required|integer",
-            "items.*.variant" => "integer",
+            "items.*.variant" => "string",
         ]);
 
         $mobile_order = new MobileAppOrderRepository($fields["restaurant_id"], $request, $fields["delivery_method"], $fields["hasPayment"], $fields["isStripe"]);
-        $mobile_order->makeOrder();
+        $response = $mobile_order->makeOrder();
+        return response($response, 200);
         //return response($fields, 200);
     }
 }
